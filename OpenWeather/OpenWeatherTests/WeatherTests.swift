@@ -35,15 +35,15 @@ class WeatherTests: XCTestCase {
         XCTAssertNotNil(weather)
         
         // AND I can see all fields are properly populated
-        XCTAssertEqual(weather!.code, 803)
-        XCTAssertEqual(weather!.description, "Clouds")
-        XCTAssertEqual(weather!.humidity, 78)
-        XCTAssertEqual(weather!.temperature, 287.11)
-        XCTAssertEqual(weather!.temperatureMin, 287.11)
-        XCTAssertEqual(weather!.temperatureMax, 289.755)
-        XCTAssertEqual(weather!.timestamp, 1496026800)
-        XCTAssertEqual(weather!.wind.speed, 3.46)
-        XCTAssertEqual(weather!.wind.degrees, 85.5016)
+        XCTAssertEqual(weather?.code, 803)
+        XCTAssertEqual(weather?.description, "Clouds")
+        XCTAssertEqual(weather?.humidity, 78)
+        XCTAssertEqual(weather?.temperature, 287.11)
+        XCTAssertEqual(weather?.temperatureMin, 287.11)
+        XCTAssertEqual(weather?.temperatureMax, 289.755)
+        XCTAssertEqual(weather?.timestamp, 1496026800)
+        XCTAssertEqual(weather?.wind.speed, 3.46)
+        XCTAssertEqual(weather?.wind.degrees, 85.5016)
     }
     
 }

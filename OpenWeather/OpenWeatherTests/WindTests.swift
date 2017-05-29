@@ -33,8 +33,8 @@ class WindTests: XCTestCase {
         XCTAssertNotNil(wind)
         
         // AND I can see all fields are properly populated
-        XCTAssertEqual(wind!.speed, 3.46)
-        XCTAssertEqual(wind!.degrees, 85.5016)
+        XCTAssertEqual(wind?.speed, 3.46)
+        XCTAssertEqual(wind?.degrees, 85.5016)
     }
     
 }
