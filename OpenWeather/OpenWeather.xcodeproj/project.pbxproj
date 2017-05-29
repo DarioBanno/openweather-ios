@@ -21,6 +21,12 @@
 		49BAF2CE1EDC6A1100C9E50E /* WindTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BAF2CD1EDC6A1100C9E50E /* WindTests.swift */; };
 		49BAF2D01EDC6A2700C9E50E /* wind.json in Resources */ = {isa = PBXBuildFile; fileRef = 49BAF2CF1EDC6A2700C9E50E /* wind.json */; };
 		49BAF2D21EDC6B3A00C9E50E /* weather.json in Resources */ = {isa = PBXBuildFile; fileRef = 49BAF2D11EDC6B3A00C9E50E /* weather.json */; };
+		49BAF2D61EDC6BD100C9E50E /* WeatherForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BAF2D51EDC6BD100C9E50E /* WeatherForecast.swift */; };
+		49BAF2D81EDC6BEC00C9E50E /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BAF2D71EDC6BEC00C9E50E /* Station.swift */; };
+		49BAF2DA1EDC6C2600C9E50E /* WeatherForecastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BAF2D91EDC6C2600C9E50E /* WeatherForecastTests.swift */; };
+		49BAF2DC1EDC6C4E00C9E50E /* forecast.json in Resources */ = {isa = PBXBuildFile; fileRef = 49BAF2DB1EDC6C4E00C9E50E /* forecast.json */; };
+		49BAF2DE1EDC6CA100C9E50E /* StationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BAF2DD1EDC6CA100C9E50E /* StationTests.swift */; };
+		49BAF2E01EDC6CDE00C9E50E /* station.json in Resources */ = {isa = PBXBuildFile; fileRef = 49BAF2DF1EDC6CDE00C9E50E /* station.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +58,12 @@
 		49BAF2CD1EDC6A1100C9E50E /* WindTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindTests.swift; sourceTree = "<group>"; };
 		49BAF2CF1EDC6A2700C9E50E /* wind.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wind.json; sourceTree = "<group>"; };
 		49BAF2D11EDC6B3A00C9E50E /* weather.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = weather.json; sourceTree = "<group>"; };
+		49BAF2D51EDC6BD100C9E50E /* WeatherForecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherForecast.swift; sourceTree = "<group>"; };
+		49BAF2D71EDC6BEC00C9E50E /* Station.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		49BAF2D91EDC6C2600C9E50E /* WeatherForecastTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherForecastTests.swift; sourceTree = "<group>"; };
+		49BAF2DB1EDC6C4E00C9E50E /* forecast.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = forecast.json; sourceTree = "<group>"; };
+		49BAF2DD1EDC6CA100C9E50E /* StationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationTests.swift; sourceTree = "<group>"; };
+		49BAF2DF1EDC6CDE00C9E50E /* station.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = station.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +121,8 @@
 		49BAF2AE1EDC668600C9E50E /* OpenWeatherTests */ = {
 			isa = PBXGroup;
 			children = (
+				49BAF2D91EDC6C2600C9E50E /* WeatherForecastTests.swift */,
+				49BAF2DD1EDC6CA100C9E50E /* StationTests.swift */,
 				49BAF2C91EDC698D00C9E50E /* WeatherTests.swift */,
 				49BAF2CD1EDC6A1100C9E50E /* WindTests.swift */,
 				49BAF2D31EDC6B3E00C9E50E /* Extensions */,
@@ -137,7 +151,9 @@
 		49BAF2C41EDC691500C9E50E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				49BAF2D71EDC6BEC00C9E50E /* Station.swift */,
 				49BAF2C01EDC68CD00C9E50E /* Weather.swift */,
+				49BAF2D51EDC6BD100C9E50E /* WeatherForecast.swift */,
 				49BAF2C21EDC68DA00C9E50E /* Wind.swift */,
 			);
 			name = Models;
@@ -154,8 +170,10 @@
 		49BAF2D41EDC6B4800C9E50E /* Stubs */ = {
 			isa = PBXGroup;
 			children = (
-				49BAF2CF1EDC6A2700C9E50E /* wind.json */,
+				49BAF2DB1EDC6C4E00C9E50E /* forecast.json */,
+				49BAF2DF1EDC6CDE00C9E50E /* station.json */,
 				49BAF2D11EDC6B3A00C9E50E /* weather.json */,
+				49BAF2CF1EDC6A2700C9E50E /* wind.json */,
 			);
 			name = Stubs;
 			sourceTree = "<group>";
@@ -257,6 +275,8 @@
 			files = (
 				49BAF2D21EDC6B3A00C9E50E /* weather.json in Resources */,
 				49BAF2D01EDC6A2700C9E50E /* wind.json in Resources */,
+				49BAF2E01EDC6CDE00C9E50E /* station.json in Resources */,
+				49BAF2DC1EDC6C4E00C9E50E /* forecast.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +288,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				49BAF2BB1EDC67E300C9E50E /* JSONSerializable.swift in Sources */,
+				49BAF2D61EDC6BD100C9E50E /* WeatherForecast.swift in Sources */,
+				49BAF2D81EDC6BEC00C9E50E /* Station.swift in Sources */,
 				49BAF29D1EDC668600C9E50E /* ViewController.swift in Sources */,
 				49BAF29B1EDC668600C9E50E /* AppDelegate.swift in Sources */,
 				49BAF2BD1EDC684600C9E50E /* Logger.swift in Sources */,
@@ -281,8 +303,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				49BAF2CC1EDC69E100C9E50E /* XCTestCase+Extensions.swift in Sources */,
+				49BAF2DE1EDC6CA100C9E50E /* StationTests.swift in Sources */,
 				49BAF2CA1EDC698D00C9E50E /* WeatherTests.swift in Sources */,
 				49BAF2CE1EDC6A1100C9E50E /* WindTests.swift in Sources */,
+				49BAF2DA1EDC6C2600C9E50E /* WeatherForecastTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

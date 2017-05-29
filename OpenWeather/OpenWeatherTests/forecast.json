@@ -1,0 +1,75 @@
+{
+    "cod": "200",
+    "message": 0.0142,
+    "cnt": 2,
+    "list": [{
+             "dt": 1496070000,
+             "main": {
+             "temp": 293.81,
+             "temp_min": 293.81,
+             "temp_max": 295.409,
+             "pressure": 1017.18,
+             "sea_level": 1024.59,
+             "grnd_level": 1017.18,
+             "humidity": 62,
+             "temp_kf": -1.6
+             },
+             "weather": [{
+                         "id": 802,
+                         "main": "Clouds",
+                         "description": "scattered clouds",
+                         "icon": "03d"
+                         }],
+             "clouds": {
+             "all": 32
+             },
+             "wind": {
+             "speed": 5.47,
+             "deg": 241.503
+             },
+             "rain": {},
+             "sys": {
+             "pod": "d"
+             },
+             "dt_txt": "2017-05-29 15:00:00"
+             }, {
+             "dt": 1496124000,
+             "main": {
+             "temp": 286.917,
+             "temp_min": 286.917,
+             "temp_max": 286.917,
+             "pressure": 1020.23,
+             "sea_level": 1027.88,
+             "grnd_level": 1020.23,
+             "humidity": 75,
+             "temp_kf": 0
+             },
+             "weather": [{
+                         "id": 800,
+                         "main": "Clear",
+                         "description": "clear sky",
+                         "icon": "01d"
+                         }],
+             "clouds": {
+             "all": 0
+             },
+             "wind": {
+             "speed": 3.46,
+             "deg": 257.501
+             },
+             "rain": {},
+             "sys": {
+             "pod": "d"
+             },
+             "dt_txt": "2017-05-30 06:00:00"
+             }],
+    "city": {
+        "id": 2643743,
+        "name": "London",
+        "coord": {
+            "lat": 51.5085,
+            "lon": -0.1258
+        },
+        "country": "GB"
+    }
+}
