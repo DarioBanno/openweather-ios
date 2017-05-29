@@ -45,16 +45,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YtS-hY-Mm8">
+                                <rect key="frame" x="0.0" y="378" width="375" height="289"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="YtS-hY-Mm8" secondAttribute="trailing" id="37d-gJ-y2E"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YtS-hY-Mm8" secondAttribute="bottom" id="52X-XA-Yp2"/>
                             <constraint firstItem="Ulo-V0-G5d" firstAttribute="centerX" secondItem="SOa-Wd-D2U" secondAttribute="centerX" id="8DT-qH-gEY"/>
                             <constraint firstItem="SOa-Wd-D2U" firstAttribute="top" secondItem="IkQ-8G-kj5" secondAttribute="bottom" constant="20" id="ChE-q9-dSF"/>
                             <constraint firstItem="IkQ-8G-kj5" firstAttribute="top" secondItem="jrW-ds-aRo" secondAttribute="bottom" constant="8" id="Dsb-ab-lIf"/>
                             <constraint firstItem="jrW-ds-aRo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HKe-ai-NrI"/>
+                            <constraint firstItem="YtS-hY-Mm8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PfN-tl-Lc8"/>
                             <constraint firstItem="IkQ-8G-kj5" firstAttribute="centerX" secondItem="jrW-ds-aRo" secondAttribute="centerX" id="SI3-ln-3Q7"/>
                             <constraint firstItem="SOa-Wd-D2U" firstAttribute="centerX" secondItem="IkQ-8G-kj5" secondAttribute="centerX" id="cD2-NR-kwV"/>
                             <constraint firstItem="Ulo-V0-G5d" firstAttribute="top" secondItem="SOa-Wd-D2U" secondAttribute="bottom" constant="8" id="gPN-d6-Uza"/>
+                            <constraint firstItem="YtS-hY-Mm8" firstAttribute="top" secondItem="Ulo-V0-G5d" secondAttribute="bottom" constant="50" id="iCK-eO-Ne2"/>
                             <constraint firstItem="jrW-ds-aRo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="64" id="v3a-t6-ydf"/>
                         </constraints>
                     </view>
@@ -62,11 +70,13 @@
                         <outlet property="cityLabel" destination="jrW-ds-aRo" id="805-AU-jnD"/>
                         <outlet property="conditionsLabel" destination="IkQ-8G-kj5" id="dEi-nY-Wae"/>
                         <outlet property="iconLabel" destination="Ulo-V0-G5d" id="j1p-VM-TYa"/>
+                        <outlet property="tableView" destination="YtS-hY-Mm8" id="VF0-4H-30k"/>
                         <outlet property="temperatureLabel" destination="SOa-Wd-D2U" id="Fkq-Qe-gn7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
         </scene>
     </scenes>
 </document>
