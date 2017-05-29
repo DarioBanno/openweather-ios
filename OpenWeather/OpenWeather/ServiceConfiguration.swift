@@ -17,5 +17,4 @@ enum ServiceConfiguration {
     /// Service paths
     static let weatherServicePath = endpoint + "/\(apiVersion)/weather"
     static let forecastServicePath = endpoint + "/\(apiVersion)/forecast"
-    
 }

@@ -14,3 +14,16 @@ protocol Service {
     
     init(httpClient: HTTPClient)
 }
+
+extension Service {
+
+    func apiQuery(name: String? = nil, id: Int? = nil) -> [String:Any] {
+        var dictionary: [String: Any] = ["APPID": ServiceConfiguration.apiKey]
+        
+        if let name = name { dictionary["q"] = name }
+        if let id = id { dictionary["id"] = id }
+        
+        return dictionary
+    }
+
+}
