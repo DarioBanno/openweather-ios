@@ -26,22 +26,24 @@ class ForecastViewController: UIViewController {
     
     func loadCurrentWeather() {
 
-        NetworkManager.shared.weatherService.fetch(name: "London, GB") { (station: Station?, error: HTTPClientError?) in
-            Logger.print(station)
+        NetworkManager.shared.weatherService.fetch(name: "London, GB") { [weak self] (station: Station?, error: HTTPClientError?) in
+            guard let station = station,
+                let weather = station.weather,
+                error == nil
+            else {
+                Logger.print("Error retrieving current weather.")
+                // TODO: Manage error - Alert with Retry button
+                return
+            }
+            
+            let weatherViewModel = WeatherViewModel(weather: weather)
+            
+            self?.cityLabel.text = station.name
+            self?.conditionsLabel.text = weather.condition
+            self?.temperatureLabel.text = weatherViewModel.temperature
+            
         }
 
-//        NetworkManager.shared.weatherService.fetch(id: station.id) { (station, error) in
-//            DispatchQueue.main.async { [weak self] in
-//                if let speed = station?.wind?.speed {
-//                    let attributedString = NSMutableAttributedString(string: String(describing: speed))
-//                    let mphString = NSAttributedString(string: "mph", attributes: [
-//                        NSFontAttributeName: UIFont.systemFont(ofSize: 17)
-//                        ])
-//                    attributedString.append(mphString)
-//                    self?.speedLabel.attributedText = attributedString
-//                }
-//            }
-//        }
     }
 
 }
