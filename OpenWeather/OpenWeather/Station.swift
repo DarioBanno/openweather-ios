@@ -14,7 +14,8 @@ struct Station {
     var name: String
     var latitude: Double
     var longitude: Double
-    var country: String
+    var country: String?
+    var weather: Weather?
     
 }
 
@@ -23,16 +24,13 @@ extension Station: JSONSerializable {
     
     init?(json: JSONObject?) {
         guard let name = json?["name"] as? String,
-            let id = json?["id"] as? Int,
-            let country = json?["country"] as? String
+            let id = json?["id"] as? Int
         else {
             return nil
         }
         
-        
         self.name = name
         self.id = id
-        self.country = country
 
         guard let coordinates = json?["coord"] as? JSONObject,
             let latitude = coordinates["lat"] as? Double,
@@ -43,6 +41,14 @@ extension Station: JSONSerializable {
         
         self.latitude = latitude
         self.longitude = longitude
+
+        // Country can be populated in different ways
+        self.country = json?["country"] as? String
+        if self.country == nil {
+            self.country = (json?["sys"] as? JSONObject)?["country"] as? String
+        }
+
+        self.weather = Weather(json: json)
     }
     
 }

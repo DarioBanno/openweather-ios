@@ -39,7 +39,7 @@ class WeatherForecastTests: XCTestCase {
         XCTAssertEqual(forecast?.weatherList.count, 2)
         
         XCTAssertEqual(forecast?.weatherList[0].code, 802)
-        XCTAssertEqual(forecast?.weatherList[0].description, "Clouds")
+        XCTAssertEqual(forecast?.weatherList[0].condition, "Clouds")
         XCTAssertEqual(forecast?.weatherList[0].humidity, 62)
         XCTAssertEqual(forecast?.weatherList[0].temperature, 293.81)
         XCTAssertEqual(forecast?.weatherList[0].temperatureMin, 293.81)
@@ -49,7 +49,7 @@ class WeatherForecastTests: XCTestCase {
         XCTAssertEqual(forecast?.weatherList[0].wind.degrees, 241.503)
         
         XCTAssertEqual(forecast?.weatherList[1].code, 800)
-        XCTAssertEqual(forecast?.weatherList[1].description, "Clear")
+        XCTAssertEqual(forecast?.weatherList[1].condition, "Clear")
         XCTAssertEqual(forecast?.weatherList[1].humidity, 75)
         XCTAssertEqual(forecast?.weatherList[1].temperature, 286.917)
         XCTAssertEqual(forecast?.weatherList[1].temperatureMin, 286.917)

@@ -59,8 +59,8 @@ class WeatherServiceTests: XCTestCase {
         XCTAssertEqual(responseStation?.id, 2643743)
         XCTAssertEqual(responseStation?.name, "London")
         XCTAssertEqual(responseStation?.country, "GB")
-        XCTAssertEqual(responseStation?.latitude, 51.5085)
-        XCTAssertEqual(responseStation?.longitude, -0.1258)
+        XCTAssertEqual(responseStation?.latitude, 51.51)
+        XCTAssertEqual(responseStation?.longitude, -0.13)
     }
     
     func test_fetch_by_name_succeeds() {
@@ -100,8 +100,8 @@ class WeatherServiceTests: XCTestCase {
         XCTAssertEqual(responseStation?.id, 2643743)
         XCTAssertEqual(responseStation?.name, "London")
         XCTAssertEqual(responseStation?.country, "GB")
-        XCTAssertEqual(responseStation?.latitude, 51.5085)
-        XCTAssertEqual(responseStation?.longitude, -0.1258)
+        XCTAssertEqual(responseStation?.latitude, 51.51)
+        XCTAssertEqual(responseStation?.longitude, -0.13)
     }
     
 }

@@ -35,9 +35,18 @@ class StationTests: XCTestCase {
         // AND I can see all fields are properly populated
         XCTAssertEqual(station?.id, 2643743)
         XCTAssertEqual(station?.name, "London")
-        XCTAssertEqual(station?.country, "GB")
-        XCTAssertEqual(station?.latitude, 51.5085)
-        XCTAssertEqual(station?.longitude, -0.1258)
+        XCTAssertEqual(station?.latitude, 51.51)
+        XCTAssertEqual(station?.longitude, -0.13)
+        XCTAssertEqual(station?.weather?.code, 701)
+        XCTAssertEqual(station?.weather?.condition, "Mist")
+        XCTAssertEqual(station?.weather?.humidity, 82)
+        XCTAssertEqual(station?.weather?.temperature, 291.47)
+        XCTAssertEqual(station?.weather?.temperatureMin, 289.15)
+        XCTAssertEqual(station?.weather?.temperatureMax, 293.15)
+        XCTAssertEqual(station?.weather?.timestamp, 1496074800)
+        XCTAssertEqual(station?.weather?.wind.speed, 5.7)
+        XCTAssertEqual(station?.weather?.wind.degrees, 200)
+
     }
     
 }

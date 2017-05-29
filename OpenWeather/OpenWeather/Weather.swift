@@ -14,7 +14,7 @@ struct Weather {
     var wind: Wind
     var timestamp: TimeInterval
     var humidity: Int
-    var description: String
+    var condition: String
     var temperature: Double
     var temperatureMin: Double
     var temperatureMax: Double
@@ -28,7 +28,7 @@ extension Weather: JSONSerializable {
         guard let weatherResults = json?["weather"] as? [JSONObject],
             let weather = weatherResults.first,
             let code = weather["id"] as? Int,
-            let description = weather["main"] as? String,
+            let condition = weather["main"] as? String,
             let wind = Wind(json: json?["wind"] as? JSONObject),
             let timestamp = json?["dt"] as? TimeInterval
             else {
@@ -36,7 +36,7 @@ extension Weather: JSONSerializable {
         }
         
         self.code = code
-        self.description = description
+        self.condition = condition
         self.wind = wind
         self.timestamp = timestamp
         
