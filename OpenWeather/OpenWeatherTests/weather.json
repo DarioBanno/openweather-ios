@@ -1,0 +1,31 @@
+{
+    "dt": 1496026800,
+    "main": {
+        "temp": 287.11,
+        "temp_min": 287.11,
+        "temp_max": 289.755,
+        "pressure": 1016.75,
+        "sea_level": 1024.23,
+        "grnd_level": 1016.75,
+        "humidity": 78,
+        "temp_kf": -2.64
+    },
+    "weather": [{
+        "id": 803,
+        "main": "Clouds",
+        "description": "broken clouds",
+        "icon": "04n"
+    }],
+    "clouds": {
+        "all": 76
+    },
+    "wind": {
+        "speed": 3.46,
+        "deg": 85.5016
+    },
+    "rain": {},
+    "sys": {
+        "pod": "n"
+    },
+    "dt_txt": "2017-05-29 03:00:00"
+}
