@@ -37,11 +37,14 @@ class HTTPClient {
             DispatchQueue.main.async { completion(result, error) }
         }
         
+        Logger.print("")
         Logger.print(">>>>>>>>>> REQUEST")
+        Logger.print("")
         Logger.print("method: " + method.rawValue.uppercased())
         Logger.print("url: \(url)")
         Logger.print("headers: \(headers)")
         Logger.print("body: \(String(describing: body))")
+        Logger.print("")
 
         // Build request
         var urlRequest = URLRequest(url: url)
@@ -61,7 +64,9 @@ class HTTPClient {
         urlSession.dataTask(with: urlRequest) {
             (data: Data?, response: URLResponse?, error: Error?) in
             
+            Logger.print("")
             Logger.print("<<<<<<<<<< RESPONSE")
+            Logger.print("")
             Logger.print("\(String(describing: response))")
             
             var clientError: HTTPClientError?
@@ -87,7 +92,8 @@ class HTTPClient {
                 // We are cool with data with no content (this is not an error).
                 Logger.print("-- No content.")
             }
-            
+            Logger.print("")
+
             dispatchCompletion(data, clientError)
         }.resume()
     }
