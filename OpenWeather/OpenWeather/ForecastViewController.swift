@@ -10,11 +10,25 @@ import UIKit
 
 class ForecastViewController: UIViewController {
 
-    @IBOutlet weak var cityLabel: UILabel!
-    @IBOutlet weak var conditionsLabel: UILabel!
-    @IBOutlet weak var temperatureLabel: UILabel!
+    @IBOutlet weak var cityLabel: UILabel! {
+        didSet {
+            cityLabel.text = ""
+        }
+    }
+    @IBOutlet weak var conditionsLabel: UILabel! {
+        didSet {
+            conditionsLabel.text = ""
+        }
+    }
+    @IBOutlet weak var temperatureLabel: UILabel! {
+        didSet {
+            temperatureLabel.text = ""
+        }
+    }
+
     @IBOutlet weak var iconLabel: UILabel! {
         didSet {
+            iconLabel.text = ""
             iconLabel.font = UIFont(name: "WeatherIcons-Regular", size: 40)
         }
     }
