@@ -51,7 +51,7 @@ For simplicity, no specific branching strategy has been followed for this projec
 
 ## Authors
 
-* **Dario Banno** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Dario Banno** - *AppTown* (http://www.apptown.io)
 
 ## License
 
