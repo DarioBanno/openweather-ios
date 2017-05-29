@@ -143,9 +143,7 @@
 		49BAF2AE1EDC668600C9E50E /* OpenWeatherTests */ = {
 			isa = PBXGroup;
 			children = (
-				49BAF2E11EDC724100C9E50E /* HTTPClient+JSONTests.swift */,
-				49BAF2E21EDC724100C9E50E /* HTTPClientTests.swift */,
-				49BAF2FC1EDC780200C9E50E /* WeatherForecastServiceTests.swift */,
+				49BAF2FE1EDC7CE500C9E50E /* Network */,
 				49BAF2E71EDC724B00C9E50E /* Models */,
 				49BAF2E81EDC725700C9E50E /* Utils */,
 				49BAF2EA1EDC728400C9E50E /* Resources */,
@@ -265,6 +263,24 @@
 				49BAF2F71EDC762E00C9E50E /* String+URLEncoding.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		49BAF2FE1EDC7CE500C9E50E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				49BAF2E11EDC724100C9E50E /* HTTPClient+JSONTests.swift */,
+				49BAF2E21EDC724100C9E50E /* HTTPClientTests.swift */,
+				49BAF2FF1EDC7CF200C9E50E /* Services */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		49BAF2FF1EDC7CF200C9E50E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				49BAF2FC1EDC780200C9E50E /* WeatherForecastServiceTests.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

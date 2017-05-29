@@ -12,9 +12,10 @@ enum ServiceConfiguration {
     
     static let apiKey = "03aecda02a3eed372aae9e7d00c2ccc5"
     static let endpoint = "http://api.openweathermap.org/data"
+    static let apiVersion = 2.5
     
     /// Service paths
-    static let weatherServicePath = endpoint + "/2.5/weather"
-    static let forecastServicePath = endpoint + "/2.5/forecast"
+    static let weatherServicePath = endpoint + "/\(apiVersion)/weather"
+    static let forecastServicePath = endpoint + "/\(apiVersion)/forecast"
     
 }
