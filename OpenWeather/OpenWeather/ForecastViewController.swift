@@ -13,7 +13,11 @@ class ForecastViewController: UIViewController {
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var conditionsLabel: UILabel!
     @IBOutlet weak var temperatureLabel: UILabel!
-    @IBOutlet weak var iconLabel: UILabel!
+    @IBOutlet weak var iconLabel: UILabel! {
+        didSet {
+            iconLabel.font = UIFont(name: "WeatherIcons-Regular", size: 40)
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +45,9 @@ class ForecastViewController: UIViewController {
             self?.cityLabel.text = station.name
             self?.conditionsLabel.text = weather.condition
             self?.temperatureLabel.text = weatherViewModel.temperature
+            
+            // TODO: update icon for night time (compare with sunrise/sunset time)
+            self?.iconLabel.text = WeatherIconsFontMapper.iconString(id: "\(weather.code)", nightTime: false)
             
         }
 

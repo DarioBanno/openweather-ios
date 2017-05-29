@@ -21,8 +21,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="icon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SOa-Wd-D2U">
-                                <rect key="frame" x="132" y="166" width="111" height="77"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="temp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SOa-Wd-D2U">
+                                <rect key="frame" x="119" y="166" width="137" height="77"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="64"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -39,8 +39,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="temp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ulo-V0-G5d">
-                                <rect key="frame" x="119" y="251" width="137" height="77"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="icon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ulo-V0-G5d">
+                                <rect key="frame" x="132" y="251" width="111" height="77"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="64"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -61,8 +61,8 @@
                     <connections>
                         <outlet property="cityLabel" destination="jrW-ds-aRo" id="805-AU-jnD"/>
                         <outlet property="conditionsLabel" destination="IkQ-8G-kj5" id="dEi-nY-Wae"/>
-                        <outlet property="iconLabel" destination="SOa-Wd-D2U" id="FjO-U6-Lxx"/>
-                        <outlet property="temperatureLabel" destination="Ulo-V0-G5d" id="8ma-Uz-PTm"/>
+                        <outlet property="iconLabel" destination="Ulo-V0-G5d" id="j1p-VM-TYa"/>
+                        <outlet property="temperatureLabel" destination="SOa-Wd-D2U" id="Fkq-Qe-gn7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

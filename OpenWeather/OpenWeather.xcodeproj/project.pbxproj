@@ -42,6 +42,9 @@
 		49BAF3031EDC808C00C9E50E /* WeatherServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BAF3021EDC808C00C9E50E /* WeatherServiceTests.swift */; };
 		49BAF3071EDC860800C9E50E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BAF3061EDC860700C9E50E /* NetworkManager.swift */; };
 		49BAF3091EDC959C00C9E50E /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BAF3081EDC959C00C9E50E /* WeatherViewModel.swift */; };
+		49BAF30D1EDC973C00C9E50E /* weathericons-regular-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49BAF30C1EDC973C00C9E50E /* weathericons-regular-webfont.ttf */; };
+		49BAF30F1EDC977900C9E50E /* WeatherIconsFontMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BAF30E1EDC977900C9E50E /* WeatherIconsFontMapperTests.swift */; };
+		49BAF3111EDC979900C9E50E /* WeatherIconsFontMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BAF3101EDC979900C9E50E /* WeatherIconsFontMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +97,9 @@
 		49BAF3021EDC808C00C9E50E /* WeatherServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherServiceTests.swift; sourceTree = "<group>"; };
 		49BAF3061EDC860700C9E50E /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		49BAF3081EDC959C00C9E50E /* WeatherViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		49BAF30C1EDC973C00C9E50E /* weathericons-regular-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "weathericons-regular-webfont.ttf"; sourceTree = "<group>"; };
+		49BAF30E1EDC977900C9E50E /* WeatherIconsFontMapperTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherIconsFontMapperTests.swift; sourceTree = "<group>"; };
+		49BAF3101EDC979900C9E50E /* WeatherIconsFontMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherIconsFontMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +154,7 @@
 		49BAF2AE1EDC668600C9E50E /* OpenWeatherTests */ = {
 			isa = PBXGroup;
 			children = (
+				49BAF30E1EDC977900C9E50E /* WeatherIconsFontMapperTests.swift */,
 				49BAF2FE1EDC7CE500C9E50E /* Network */,
 				49BAF2E71EDC724B00C9E50E /* Models */,
 				49BAF2E81EDC725700C9E50E /* Utils */,
@@ -162,6 +169,7 @@
 				49BAF2F91EDC763400C9E50E /* Extensions */,
 				49BAF2BF1EDC688700C9E50E /* Protocols */,
 				49BAF2BC1EDC684600C9E50E /* Logger.swift */,
+				49BAF3101EDC979900C9E50E /* WeatherIconsFontMapper.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -294,6 +302,7 @@
 		49BAF3041EDC831100C9E50E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				49BAF30C1EDC973C00C9E50E /* weathericons-regular-webfont.ttf */,
 				49BAF2A11EDC668600C9E50E /* Assets.xcassets */,
 				49BAF2A61EDC668600C9E50E /* Info.plist */,
 			);
@@ -414,6 +423,7 @@
 			files = (
 				49BAF2A51EDC668600C9E50E /* LaunchScreen.storyboard in Resources */,
 				49BAF2A21EDC668600C9E50E /* Assets.xcassets in Resources */,
+				49BAF30D1EDC973C00C9E50E /* weathericons-regular-webfont.ttf in Resources */,
 				49BAF2A01EDC668600C9E50E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,6 +462,7 @@
 				49BAF2F81EDC762E00C9E50E /* String+URLEncoding.swift in Sources */,
 				49BAF2F01EDC746200C9E50E /* Service.swift in Sources */,
 				49BAF2C11EDC68CD00C9E50E /* Weather.swift in Sources */,
+				49BAF3111EDC979900C9E50E /* WeatherIconsFontMapper.swift in Sources */,
 				49BAF2F51EDC750E00C9E50E /* ServiceConfiguration.swift in Sources */,
 				49BAF2C31EDC68DA00C9E50E /* Wind.swift in Sources */,
 			);
@@ -463,6 +474,7 @@
 			files = (
 				49BAF2E61EDC724100C9E50E /* MockURLSession.swift in Sources */,
 				49BAF2CC1EDC69E100C9E50E /* XCTestCase+Extensions.swift in Sources */,
+				49BAF30F1EDC977900C9E50E /* WeatherIconsFontMapperTests.swift in Sources */,
 				49BAF2DE1EDC6CA100C9E50E /* StationTests.swift in Sources */,
 				49BAF2CA1EDC698D00C9E50E /* WeatherTests.swift in Sources */,
 				49BAF2E51EDC724100C9E50E /* HTTPClientTests.swift in Sources */,
