@@ -1,5 +1,5 @@
 # OpenWeather
-Sample app for Open Weather Map
+Weather app for iOS using the Open Weather API
 
 ## Getting Started
 
